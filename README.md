@@ -47,7 +47,7 @@ Closure is when an inner function reaches into an outer function to grab a value
 
 5. Why do we need super() in an extended class?
 
-We need `super()` and `extend` in class to reference the properties and methods in the parent class.
+We need `super()` and `extend` in an extended class to reference the properties and methods in the parent class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
