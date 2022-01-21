@@ -24,15 +24,27 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
-1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each.
+
+`.map` creates a new array and is used to convert data. An example of when to use `.map` is converting lowercase state abbreviations to uppercase.  `.reduce` returns a single value usually used to give a total sum of many numbers. An example case for `.reduce` is totaling the amount of donations in an array of data. `.filter` returns a new array of the objects that passed a condition you set. An example use of `.filter` is if your only trying to see states that have more than one airport in an array, you can filter all the airports that have more than one.
 
 2. Explain the difference between a callback and a higher order function.
 
+A callback function is the function that gets passed through a higher order function as an argument. A higher order function accepts a callback function as an argument.
+
 3. Explain what a closure is.
+
+Closure is when an inner function reaches into an outer function to grab a value defined in the outer function. For example you have a function nested in another function, to reach closure the nested function must use data from the outer function.
 
 4. Describe the four principles of the 'this' keyword.
 
+1. Window Binding happens when we don't give context to `this` so it returns the global object in node or undefined in strict mode.
+2. Implicit Binding meaning the context is anything left of the dot when a function is invoked.
+3. Explicit Binding uses `.call(), .apply(), and .bind()` to explicitly state teh context of this. `.call` immediately invoke the function 1 by 1. `.apply` immediately invokes the function with an array. And `.bind` will pass the arguments 1 by 1 by won't immediately invoke the function.
+
 5. Why do we need super() in an extended class?
+
+We need `super()` and `extend` in class to reference the properties and methods in the parent class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
